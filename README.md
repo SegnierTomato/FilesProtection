@@ -9,6 +9,9 @@ It works like trash on Window OS.
 
 ## License
 
+##### *Some part of files was removed due to license agreement.*
+##### *Other files under Apache License, Version 2.0.*
+
 Copyright (c) 2016 SegnierTomato (http://github.com/SegnierTomato).
     
     Licensed under the Apache License, Version 2.0 (the "License");
