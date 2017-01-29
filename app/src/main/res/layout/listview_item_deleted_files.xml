@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.segniertomato.filesprotection.ui.SelectedRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_view_selector"
+    android:clickable="false">
+
+    <RelativeLayout
+        android:id="@+id/listview.row_without_expand_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_view_row_height">
+
+        <RelativeLayout
+            android:id="@+id/button_expand_layout.info"
+            android:layout_width="@dimen/button_height"
+            android:layout_height="@dimen/button_height"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/left_right_list_view_row_padding">
+
+            <View
+                android:layout_width="@dimen/expand_triangle_icon_size"
+                android:layout_height="@dimen/expand_triangle_icon_size"
+                android:layout_centerInParent="true"
+                android:background="@drawable/triangle" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview.file_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/button_expand_layout.info"
+            android:ellipsize="marquee"
+            android:lines="1"
+            android:paddingLeft="@dimen/left_right_list_view_row_padding"
+            android:scrollHorizontally="true"
+            android:textSize="@dimen/list_view_primary_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+        android:id="@+id/expandablelinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_below="@id/listview.row_without_expand_container"
+        android:orientation="vertical"
+        app:ael_duration="400"
+        app:ael_expanded="false">
+
+        <RelativeLayout
+            android:id="@+id/expand.ineer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textview.deleted_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/left_right_list_view_row_padding"
+                android:paddingRight="@dimen/left_right_list_view_row_padding"
+                android:textSize="@dimen/list_view_secondary_text_size" />
+
+            <TextView
+                android:id="@+id/textview.original_path"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/textview.deleted_date"
+                android:ellipsize="marquee"
+                android:lines="1"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/left_right_list_view_row_padding"
+                android:paddingRight="@dimen/left_right_list_view_row_padding"
+                android:scrollHorizontally="true"
+                android:textSize="@dimen/list_view_secondary_text_size" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_container_height">
+
+            <Button
+                android:id="@+id/button.action_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:minWidth="@dimen/button_min_width"
+                android:paddingBottom="@dimen/button_height_padding"
+                android:paddingLeft="@dimen/button_LR_side_padding"
+                android:paddingRight="@dimen/button_LR_side_padding"
+                android:paddingTop="@dimen/button_height_padding"
+                android:text="delete"
+                android:theme="@style/AppTheme.Button" />
+
+            <Button
+                android:id="@+id/button.action_restore"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_alignBaseline="@id/button.action_restore"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/button.action_delete"
+                android:minWidth="@dimen/button_min_width"
+                android:paddingBottom="@dimen/button_height_padding"
+                android:paddingRight="@dimen/button_LR_side_padding"
+                android:paddingTop="@dimen/button_height_padding"
+                android:text="restore"
+                android:theme="@style/AppTheme.Button" />
+
+        </RelativeLayout>
+
+
+    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+</com.segniertomato.filesprotection.ui.SelectedRelativeLayout>

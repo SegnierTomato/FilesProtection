@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="VIEW_HOLDER_TAG_KEY" type="id"/>
+    <item name="ROW_ID" type="id"/>
+
+    <item name="REQUEST_WRITE_EXTERNAL_STORAGE" type="id"/>
+</resources>

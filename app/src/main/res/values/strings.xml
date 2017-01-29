@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">FilesProtection</string>
+
+    <string name="protection_folders_category_header">Protection folders</string>
+    <string name="input_protection_folders_header_1">Input protection folder № 1</string>
+    <string name="input_protection_folders_header_2">Input protection folder № 2</string>
+
+    <string name="summary_input_folders">Protection folder</string>
+
+    <string name="select_protection_folders_default_value">External and removable storage</string>
+
+    <!--<string name="enable_auto_running_header">Enable auto reboot</string>-->
+
+    <string name="service_state_start_action">Start service</string>
+    <string name="service_state_stop_action">Stop service</string>
+
+    <string name="permission_dialog_try_again_action">Try again</string>
+    <string name="permission_dialog_exit_action">Exit</string>
+
+    <string name="permission_dialog_title">Permission Info</string>
+    <string name="permission_dialog_message">Write external storage permission is denied. If you will not provide this permission the application cannot protect your files.\n\nWill be permission request shown again?</string>
+</resources>

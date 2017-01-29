@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <PreferenceCategory
+        android:theme="@style/Preference_TextAppearanceMaterialBody2"
+        android:title="@string/protection_folders_category_header">
+
+        <com.takisoft.fix.support.v7.preference.EditTextPreference
+            android:key="preference.input_path_1"
+            android:summary="@string/summary_input_folders"
+            android:title="@string/input_protection_folders_header_1" />
+
+        <com.takisoft.fix.support.v7.preference.EditTextPreference
+            android:key="preference.input_path_2"
+            android:summary="@string/summary_input_folders"
+            android:title="@string/input_protection_folders_header_2" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

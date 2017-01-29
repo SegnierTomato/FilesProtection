@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.segniertomato.filesprotection.ui.MainActivity">
+
+
+    <!--<Button-->
+    <!--android:id="@+id/button.start_service"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:text="Start service"-->
+    <!--android:theme="@style/AppTheme.Button"-->
+    <!--app:layout_widthPercent="50%" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/button.stop_service"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/button.start_service"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="30dp"-->
+    <!--android:text="Stop_service"-->
+    <!--android:theme="@style/AppTheme.Button"-->
+    <!--app:layout_widthPercent="50%" />-->
+
+
+</android.support.percent.PercentRelativeLayout>
